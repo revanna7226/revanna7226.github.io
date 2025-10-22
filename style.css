@@ -40,17 +40,20 @@ header h1 {
   flex-wrap: wrap;
 }
 .profile-img {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid rgba(255,255,255,0.25);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-  background: rgba(255,255,255,0.08);
+  border-radius: 5%;
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 @media (max-width: 520px) {
-  .profile-img { width: 88px; height: 88px; }
+  .profile-img {
+    width: 88px;
+    height: 88px;
+  }
 }
 
 /* Sections */
@@ -65,14 +68,17 @@ section h2 {
 }
 
 /* Jobs */
-.job {
+.job,
+.qualification {
   margin-bottom: 20px;
 }
-.job h3 {
+.job h3,
+.qualification h3 {
   margin: 0;
   font-size: 1.2rem;
 }
-.company {
+.company,
+.institution {
   font-style: italic;
   color: #666;
 }
@@ -92,6 +98,52 @@ section h2 {
   border-radius: 20px;
   font-size: 0.9rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.contact-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px; /* Spacing between items horizontally */
+  align-items: center; /* Vertically center items */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-icon {
+  margin-right: 8px;
+}
+/* Contact Items */
+/* .contact-item {
+  font-size: 1.2em;
+  margin: 8px 0;
+}
+.contact-icon {
+  margin-right: 8px;
+  color: #0073b1;
+} */
+.email-icon {
+  color: #ea4335;
+} /* Gmail red */
+.mobile-icon {
+  color: #34a853;
+} /* green */
+.whatsapp-icon {
+  color: #25d366;
+} /* WhatsApp green */
+.github-icon {
+  color: #333;
+} /* GitHub black */
+.linkedin-icon {
+  color: #0077b5;
+} /* LinkedIn blue */
+.resume-item {
+  text-align: center;
+  margin-top: 20px;
 }
 
 /* Footer */
