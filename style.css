@@ -7,6 +7,11 @@ body {
   background: #f4f9ff;
 }
 
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
 /* Container */
 .container {
   width: 85%;
